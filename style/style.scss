@@ -230,7 +230,7 @@ section {
                 p {
                     margin: 0 10px;
 
-                    span {
+                    .discount {
                         padding: 2px 8px;
                         margin: 0 0 0 10px;
 
@@ -287,64 +287,106 @@ section {
     body {
         background: url(/images/bg-pattern.svg);
         background-repeat: no-repeat;
+        
     }
 
     section {
         .div-title {
-            width: 290px;
-            margin: 40px auto;
+            width: 310px;
+            margin: 62px auto 35px auto;
 
             h1 {
-                font-size: 20px;
+                font-size: 22px;
+                margin: 10px 0 0 0;
             }
 
             p {
-                font-size: 13px;
-                width: 180px;
+                font-size: 14px;
+                width: 200px;
                 margin: 10px auto;
+                line-height: 25px;
             }
         }
 
         .card {
-            width: 320px;
-        }
+            width: 355px;
 
-        .card-value {
-            grid-template-areas:
-                "a a"
-                "c c"
-                "b b"
-                "d d";
-            
-            padding: 40px 20px;
+            .card-value {
+                grid-template-areas:
+                    "a a"
+                    "c c"
+                    "b b"
+                    "d d";
+                
+                padding: 40px 20px;
+    
+                .span-pageviews {
+                    font-size: 12px;
+                    text-align: center;
+                    margin: auto;
+                    justify-content: space-around;
+                }
+    
+                .wrap-input {
+                    margin-bottom: 40px;
+                    
+                    input {
+                        border-radius: 15px;
+                    }
+                }
+    
+                .span-price {
+                    justify-content: center ;
 
-            .span-pageviews {
-                font-size: 11px;
-                text-align: center;
-                margin: auto;
-                justify-content: space-around;
+                    .span-price-USD {
+                        font-size: 34px;
+                    }
+
+                    .span-price-value {
+                        font-size: 34px;
+                    }
+                }
+    
+                .month-year-div {
+                    justify-content: center ;
+                    margin: 40px 0 0 0;
+
+                    p {
+                        flex: 0 0 auto;
+
+                        span {
+                            display: none;
+                        }
+                    }
+
+                    .year-bill:after {
+                        padding: 2px 8px;
+                        margin: 0 0 0 10px;
+
+                        font-size: 11px;
+                        font-weight: 700;
+                        background-color: $color-discount-bg;
+                        color: $color-discount-text;
+                        border-radius: 515px;
+                        content: '-25%';
+                    }
+
+                } 
             }
 
-            .wrap-input {
-                
-                input {
-                    border-radius: 15px;
+            .card-bottom {
+                flex-direction: column;
+                padding: 0;
+
+                ul {
+                    margin: 35px 0 25px 0;
+                    text-align: center;
+                }
+
+                button {
+                    margin: 0 0 40px 0;
                 }
             }
-
-            .span-price {
-                justify-content: center ;
-            }
-
-            .month-year-div {
-                justify-content: center ;
-                margin: 0 0 0 0;
-            }
-
-
-
-        }
-
-        
+        }        
     }
 }

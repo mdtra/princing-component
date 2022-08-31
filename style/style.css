@@ -188,7 +188,7 @@ section .card .card-value .month-year-div .switch--shadow:checked + label:after 
 section .card .card-value .month-year-div p {
   margin: 0 10px;
 }
-section .card .card-value .month-year-div p span {
+section .card .card-value .month-year-div p .discount {
   padding: 2px 8px;
   margin: 0 0 0 10px;
   font-size: 11px;
@@ -230,38 +230,76 @@ section .card .card-bottom button:hover {
     background-repeat: no-repeat;
   }
   section .div-title {
-    width: 290px;
-    margin: 40px auto;
+    width: 310px;
+    margin: 62px auto 35px auto;
   }
   section .div-title h1 {
-    font-size: 20px;
+    font-size: 22px;
+    margin: 10px 0 0 0;
   }
   section .div-title p {
-    font-size: 13px;
-    width: 180px;
+    font-size: 14px;
+    width: 200px;
     margin: 10px auto;
+    line-height: 25px;
   }
   section .card {
-    width: 320px;
+    width: 355px;
   }
-  section .card-value {
+  section .card .card-value {
     grid-template-areas: "a a" "c c" "b b" "d d";
     padding: 40px 20px;
   }
-  section .card-value .span-pageviews {
-    font-size: 11px;
+  section .card .card-value .span-pageviews {
+    font-size: 12px;
     text-align: center;
     margin: auto;
     justify-content: space-around;
   }
-  section .card-value .wrap-input input {
+  section .card .card-value .wrap-input {
+    margin-bottom: 40px;
+  }
+  section .card .card-value .wrap-input input {
     border-radius: 15px;
   }
-  section .card-value .span-price {
+  section .card .card-value .span-price {
     justify-content: center;
   }
-  section .card-value .month-year-div {
+  section .card .card-value .span-price .span-price-USD {
+    font-size: 34px;
+  }
+  section .card .card-value .span-price .span-price-value {
+    font-size: 34px;
+  }
+  section .card .card-value .month-year-div {
     justify-content: center;
-    margin: 0 0 0 0;
+    margin: 40px 0 0 0;
+  }
+  section .card .card-value .month-year-div p {
+    flex: 0 0 auto;
+  }
+  section .card .card-value .month-year-div p span {
+    display: none;
+  }
+  section .card .card-value .month-year-div .year-bill:after {
+    padding: 2px 8px;
+    margin: 0 0 0 10px;
+    font-size: 11px;
+    font-weight: 700;
+    background-color: hsl(14deg, 92%, 95%);
+    color: hsl(15deg, 100%, 70%);
+    border-radius: 515px;
+    content: "-25%";
+  }
+  section .card .card-bottom {
+    flex-direction: column;
+    padding: 0;
+  }
+  section .card .card-bottom ul {
+    margin: 35px 0 25px 0;
+    text-align: center;
+  }
+  section .card .card-bottom button {
+    margin: 0 0 40px 0;
   }
 }/*# sourceMappingURL=style.css.map */
