@@ -1,0 +1,267 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100vh;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  background: url(/images/bg-pattern.svg);
+  background-color: hsl(230deg, 100%, 99%);
+  background-repeat: no-repeat;
+  background-size: contain;
+  color: hsl(225deg, 20%, 60%);
+}
+
+section {
+  margin: 0;
+}
+section .div-title {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  height: 150px;
+  margin: 62px 0 45px 0;
+  text-align: center;
+  background: url(/images/pattern-circles.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+section .div-title h1 {
+  font-size: 27px;
+  color: hsl(227deg, 35%, 25%);
+}
+section .div-title p {
+  font-size: 15px;
+  color: hsl(225deg, 20%, 60%);
+  margin: 12px 0 0 0;
+}
+section .card {
+  max-width: 550px;
+  margin: auto;
+  background-color: hsl(0deg, 0%, 100%);
+  border-radius: 10px;
+  box-shadow: 0 10px 20px hsla(225deg, 20%, 60%, 0.178);
+}
+section .card .card-value {
+  display: grid;
+  grid-template-areas: "a b" "c c" "d d";
+  padding: 45px;
+  border-bottom: 1px solid hsl(228deg, 33%, 91%);
+}
+section .card .card-value .span-pageviews {
+  text-transform: uppercase;
+  grid-area: a;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+section .card .card-value .pageviews {
+  padding: 0 6px 0 0;
+}
+section .card .card-value .span-price {
+  display: flex;
+  align-items: center;
+  grid-area: b;
+  justify-content: flex-end;
+}
+section .card .card-value .span-price .span-price-USD {
+  font-size: 40px;
+  font-weight: 700;
+  color: hsl(227deg, 35%, 25%);
+}
+section .card .card-value .span-price .span-price-value {
+  font-size: 40px;
+  font-weight: 700;
+  color: hsl(227deg, 35%, 25%);
+}
+section .card .card-value .span-price .span-price-text {
+  margin: 0 0 0 7px;
+}
+section .card .card-value .wrap-input {
+  grid-area: c;
+  margin: 30px 0 50px 0;
+}
+section .card .card-value .wrap-input .range-value {
+  -webkit-appearance: none;
+  height: 8px;
+  width: 100%;
+  background: linear-gradient(to right, hsl(174deg, 77%, 80%) 0%, hsl(174deg, 77%, 80%) 50%, hsl(224deg, 65%, 95%) 50%, hsl(224deg, 65%, 95%) 100%);
+}
+section .card .card-value .wrap-input .range-value::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background: url("/images/icon-slider.svg");
+  background-color: hsl(174deg, 86%, 45%);
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 0 10px 25px hsla(174deg, 86%, 45%, 0.678);
+  cursor: pointer;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+section .card .card-value .wrap-input .range-value::-moz-range-thumb {
+  -webkit-appearance: none;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background: url("/images/icon-slider.svg");
+  background-color: hsl(174deg, 86%, 45%);
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 0 10px 25px hsla(174deg, 86%, 45%, 0.678);
+  cursor: pointer;
+  -moz-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  border: none;
+}
+section .card .card-value .wrap-input .range-value::-webkit-slider-thumb:hover {
+  background-color: hsl(174deg, 85%, 34%);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+section .card .card-value .month-year-div {
+  display: flex;
+  justify-content: center;
+  margin: 0 0 0 90px;
+  grid-area: d;
+  font-size: 13px;
+}
+section .card .card-value .month-year-div .switch {
+  position: absolute;
+  margin-left: -9999px;
+  visibility: hidden;
+}
+section .card .card-value .month-year-div label {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  width: 45px;
+  height: 22px;
+  background-color: hsl(223deg, 50%, 87%);
+  border-radius: 60px;
+  flex: 0 0 auto;
+}
+section .card .card-value .month-year-div label:before, section .card .card-value .month-year-div label:after {
+  display: block;
+  position: absolute;
+  content: "";
+  top: 3px;
+  bottom: 1px;
+  left: 3px;
+}
+section .card .card-value .month-year-div label:before {
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  border-radius: 60px;
+  transition: 0.3s;
+}
+section .card .card-value .month-year-div label:after {
+  width: 15px;
+  height: 15px;
+  border-radius: 60px;
+  background-color: white;
+  transition: 0.3s;
+}
+section .card .card-value .month-year-div .switch--shadow:checked + label:before {
+  background-color: hsl(174deg, 86%, 45%);
+}
+section .card .card-value .month-year-div .switch--shadow:checked + label:after {
+  transform: translateX(23px);
+}
+section .card .card-value .month-year-div p {
+  margin: 0 10px;
+}
+section .card .card-value .month-year-div p span {
+  padding: 2px 8px;
+  margin: 0 0 0 10px;
+  font-size: 11px;
+  font-weight: 700;
+  background-color: hsl(14deg, 92%, 95%);
+  color: hsl(15deg, 100%, 70%);
+  border-radius: 515px;
+}
+section .card .card-bottom {
+  padding: 35px 45px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+section .card .card-bottom ul li {
+  list-style-position: inside;
+  list-style-image: url(/images/icon-check.svg);
+  font-size: 12px;
+  margin: 0 0 10px 0;
+}
+section .card .card-bottom button {
+  border: none;
+  border-radius: 30px;
+  background-color: hsl(227deg, 35%, 25%);
+  color: hsl(226deg, 100%, 87%);
+  font-family: "Manrope", sans-serif;
+  padding: 10px 40px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+section .card .card-bottom button:hover {
+  color: white;
+  transition: 0.3s ease-in-out;
+}
+
+@media (max-width: 580px) {
+  body {
+    background: url(/images/bg-pattern.svg);
+    background-repeat: no-repeat;
+  }
+  section .div-title {
+    width: 290px;
+    margin: 40px auto;
+  }
+  section .div-title h1 {
+    font-size: 20px;
+  }
+  section .div-title p {
+    font-size: 13px;
+    width: 180px;
+    margin: 10px auto;
+  }
+  section .card {
+    width: 320px;
+  }
+  section .card-value {
+    grid-template-areas: "a a" "c c" "b b" "d d";
+    padding: 40px 20px;
+  }
+  section .card-value .span-pageviews {
+    font-size: 11px;
+    text-align: center;
+    margin: auto;
+    justify-content: space-around;
+  }
+  section .card-value .wrap-input input {
+    border-radius: 15px;
+  }
+  section .card-value .span-price {
+    justify-content: center;
+  }
+  section .card-value .month-year-div {
+    justify-content: center;
+    margin: 0 0 0 0;
+  }
+}/*# sourceMappingURL=style.css.map */
