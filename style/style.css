@@ -11,7 +11,7 @@ html, body {
 
 body {
   font-family: "Manrope", sans-serif;
-  background: url(/images/bg-pattern.svg);
+  background: url("../images/bg-pattern.svg");
   background-color: hsl(230deg, 100%, 99%);
   background-repeat: no-repeat;
   background-size: contain;
@@ -28,7 +28,7 @@ section .div-title {
   height: 150px;
   margin: 62px 0 45px 0;
   text-align: center;
-  background: url(/images/pattern-circles.svg);
+  background: url("../images/pattern-circles.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -100,7 +100,7 @@ section .card .card-value .wrap-input .range-value::-webkit-slider-thumb {
   width: 35px;
   height: 35px;
   border-radius: 50%;
-  background: url("/images/icon-slider.svg");
+  background: url("../images/icon-slider.svg");
   background-color: hsl(174deg, 86%, 45%);
   background-position: center;
   background-repeat: no-repeat;
@@ -114,7 +114,7 @@ section .card .card-value .wrap-input .range-value::-moz-range-thumb {
   width: 35px;
   height: 35px;
   border-radius: 50%;
-  background: url("/images/icon-slider.svg");
+  background: url("../images/icon-slider.svg");
   background-color: hsl(174deg, 86%, 45%);
   background-position: center;
   background-repeat: no-repeat;
@@ -205,7 +205,7 @@ section .card .card-bottom {
 }
 section .card .card-bottom ul li {
   list-style-position: inside;
-  list-style-image: url(/images/icon-check.svg);
+  list-style-image: url("../images/icon-check.svg");
   font-size: 12px;
   margin: 0 0 10px 0;
 }
@@ -226,7 +226,7 @@ section .card .card-bottom button:hover {
 
 @media (max-width: 580px) {
   body {
-    background: url(/images/bg-pattern.svg);
+    background: url("../images/bg-pattern.svg");
     background-repeat: no-repeat;
   }
   section .div-title {
